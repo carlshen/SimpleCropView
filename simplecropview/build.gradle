@@ -34,77 +34,77 @@ group = 'com.isseiaoki'
 version = '1.1.8'
 def siteUrl = 'https://github.com/IsseiAoki/SimpleCropView'
 def gitUrl = 'https://github.com/IsseiAoki/SimpleCropView.git'
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
+//Properties properties = new Properties()
+//properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
-bintray {
+//bintray {
+//
+//  user = properties.getProperty("bintray.user")
+//  key = properties.getProperty("bintray.apikey")
+//
+//  configurations = ['archives'] //When uploading configuration files
+//  pkg {
+//    repo = 'maven'
+//    name = 'SimpleCropView'
+//    desc = 'A simple image cropping library for Android.'
+//    websiteUrl = siteUrl
+//    issueTrackerUrl = 'https://github.com/IsseiAoki/SimpleCropView/issues'
+//    vcsUrl = gitUrl
+//    licenses = ['MIT']
+//    labels = ['android']
+//    publicDownloadNumbers = true
+//  }
+//}
+//
+//install {
+//  repositories.mavenInstaller {
+//    pom {
+//      project {
+//        packaging 'aar'
+//        name 'SimpleCropView'
+//        url siteUrl
+//        licenses {
+//          license {
+//            name 'The MIT License (MIT)'
+//            url 'http://opensource.org/licenses/MIT'
+//          }
+//        }
+//        developers {
+//          developer {
+//            id 'isseiaoki'
+//            name 'Issei Aoki'
+//            email 'i.greenwood.dev@gmail.com'
+//          }
+//        }
+//        scm {
+//          connection 'https://github.com/IsseiAoki/SimpleCropView.git'
+//          developerConnection 'https://github.com/IsseiAoki/SimpleCropView.git'
+//          url siteUrl
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//task sourcesJar(type: Jar) {
+//  from android.sourceSets.main.java.srcDirs
+//  classifier = 'sources'
+//}
+//
+//task javadoc(type: Javadoc) {
+//  source = android.sourceSets.main.java.srcDirs
+//  classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//}
+//
+//task javadocJar(type: Jar, dependsOn: javadoc) {
+//  classifier = 'javadoc'
+//  from javadoc.destinationDir
+//}
+//artifacts {
+//  archives javadocJar
+//  archives sourcesJar
+//}
 
-  user = properties.getProperty("bintray.user")
-  key = properties.getProperty("bintray.apikey")
-
-  configurations = ['archives'] //When uploading configuration files
-  pkg {
-    repo = 'maven'
-    name = 'SimpleCropView'
-    desc = 'A simple image cropping library for Android.'
-    websiteUrl = siteUrl
-    issueTrackerUrl = 'https://github.com/IsseiAoki/SimpleCropView/issues'
-    vcsUrl = gitUrl
-    licenses = ['MIT']
-    labels = ['android']
-    publicDownloadNumbers = true
-  }
-}
-
-install {
-  repositories.mavenInstaller {
-    pom {
-      project {
-        packaging 'aar'
-        name 'SimpleCropView'
-        url siteUrl
-        licenses {
-          license {
-            name 'The MIT License (MIT)'
-            url 'http://opensource.org/licenses/MIT'
-          }
-        }
-        developers {
-          developer {
-            id 'isseiaoki'
-            name 'Issei Aoki'
-            email 'i.greenwood.dev@gmail.com'
-          }
-        }
-        scm {
-          connection 'https://github.com/IsseiAoki/SimpleCropView.git'
-          developerConnection 'https://github.com/IsseiAoki/SimpleCropView.git'
-          url siteUrl
-        }
-      }
-    }
-  }
-}
-
-task sourcesJar(type: Jar) {
-  from android.sourceSets.main.java.srcDirs
-  classifier = 'sources'
-}
-
-task javadoc(type: Javadoc) {
-  source = android.sourceSets.main.java.srcDirs
-  classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-  classifier = 'javadoc'
-  from javadoc.destinationDir
-}
-artifacts {
-  archives javadocJar
-  archives sourcesJar
-}
-
-task findConventions << {
-  println project.getConvention()
-}
+//task findConventions << {
+//  println project.getConvention()
+//}

@@ -2,11 +2,15 @@
 
 buildscript {
   repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        mavenCentral()
+        maven { url "https://jitpack.io" }
     jcenter()
     google()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:3.1.4'
+    classpath 'com.android.tools.build:gradle:4.0.1'
     classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
     classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
     classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
@@ -17,6 +21,10 @@ buildscript {
 
 allprojects {
   repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        mavenCentral()
+        maven { url "https://jitpack.io" }
     jcenter()
     google()
   }
@@ -24,7 +32,7 @@ allprojects {
 
 ext {
   permissionsDispatcherVersion = '2.4.0'
-  supportLibraryVersion = '28.0.0-rc02'
+  supportLibraryVersion = '28.0.0'
   rxPermissionsVersion = '0.9.4@aar'
   rxJavaVersion = '2.1.10'
   rxAndroidVersion = '2.0.2'
